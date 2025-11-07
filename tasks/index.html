@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK APP</title>
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+    
+    <section class="top">
+      <h1 id="main-title">Task App</h1>
+
+      <form id="task-form" novalidate>
+        <div class="form-row">
+          <input id="new-task" type="text" placeholder="Escribe tu tarea..." aria-label="Nueva tarea" maxlength="500">
+          <button type="button" id="add-btn" title="Agregar tarea">+</button>
+        </div>
+        
+      </form>
+    </section>
+
+    
+    <div class="task-container">
+      
+      
+      <section class="list-wrap">
+        <ul id="task-list" aria-live="polite">
+          <li class="task-item completed">
+           
+            <div class="task-content"><p>Aprender Algoritmos Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aspernatur inventore placeat rerum hic ducimus dignissimos optio itaque consectetur, ut quidem quam sequi nostrum ea! Doloribus optio error quidem vero. </p></div>
+            <button class="task-status" type="button" aria-label="Tarea completada" title="Completada">✓</button>
+            
+          </li>
+          <li class="task-item completed">
+            
+            <div class="task-content"><p>Diagramas de Flujo</p></div>
+            <button class="task-status" type="button" aria-label="Tarea completada" title="Completada">✓</button>
+           
+          </li>
+          <li class="task-item">
+            
+            <div class="task-content"><p>Aprender HTML </p></div>
+            <button class="task-status" type="button" aria-label="Marcar como completada" title="Marcar como completada">✓</button>
+            <button class="task-delete" type="button" aria-label="Eliminar tarea" title="Eliminar">✕</button>
+          </li>
+          <li class="task-item">
+            
+            <div class="task-content"><p>Aprender CSS</p></div>
+            <button class="task-status" type="button" aria-label="Marcar como completada" title="Marcar como completada">✓</button>
+            <button class="task-delete" type="button" aria-label="Eliminar tarea" title="Eliminar">✕</button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="counters">
+        <button type="button" id="total-count" class="counter-btn" aria-label="Total de tareas">Total: 4</button>
+        <button type="button" id="completed-count" class="counter-btn" aria-label="Tareas completadas">Completadas: 2</button>
+        <button type="button" id="incompleted-count" class="counter-btn" aria-label="Tareas incompletas">Incompletas: 2</button>
+      </section>
+    </div>
+
+    </main>
+    
+</body>
+</html>
